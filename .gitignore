@@ -1,32 +1,31 @@
-# Prerequisites
-*.d
+//This program shows average of numbers entered by user. 
+//In this program, an example was given by using 'while loop'.
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+#include <iostream>
+using namespace std;
 
-# Precompiled Headers
-*.gch
-*.pch
+int main() {
+    int num = 1;
+    int number;
+    int total = 0;
+    int ave = 0;
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
 
-# Fortran module files
-*.mod
-*.smod
+    cout << " Enter 2 number and get average of them: " << endl;
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+    while (num <= 2) {
+        cin >> number;
+        total += number;
+        num++;
+        ave = total / 2;
 
-# Executables
-*.exe
-*.out
-*.app
+    }
+    cout << "                     " << endl;
+    cout << "Total of numbers is: " << total << ". Average of numbers is: " << ave << endl;
+    cout << "                     " << endl;
+
+
+
+    return 0;
+
+}
